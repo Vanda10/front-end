@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Add Teacher</title>
+  <title>Add Student</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="/dist/output.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
@@ -130,7 +130,7 @@
     <div class="main-content ml-[300px] p-8">
         <!-- first row -->
       <div class="text-4xl font-bold mt-20 ml-20">
-        <h1>Add Teacher</h1>
+        <h1>Add Student</h1>
       </div>
 
       <div class="mt-5 flex ml-20 mr-20">
@@ -158,17 +158,25 @@
           </div>
         </div> 
       
-        <div class="ml-5 grow-0">
+        <div class="ml-3 grow-0">
           <div class="input-group">
             <div class="form-text text-gray-900" id="gender">Gender</div>
             <div class="input-group">
               <select class="form-select" id="gender" aria-label="Example select with button addon">
+                <option value="-">-</option>
                 <option value="Female">Female</option>
                 <option value="Male">Male</option>
               </select>
             </div>
           </div>
         </div>
+
+        <div class="ml-3 grow-0">
+            <div class="form-text text-gray-900" id="class">Class</div>
+            <div class="input-group">
+              <input type="text" class="form-control" id="class" aria-describedby="basic-addon4">
+            </div>
+          </div> 
       </div>
 
       <div class="flex ml-20 mr-20">
@@ -191,14 +199,14 @@
         <div class="ml-20 mr-20 mt-10">
           <button type="button" class="text-white bg-[#183D5C] hover:bg-sky-700 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2">
             <i class="bi bi-pencil-square"></i>
-            Add another Teacher
+            Add another Student
           </button>
         </div>
       
         <!-- Button trigger modal -->
         <div class="ml-20 mt-10">
           <button type="button" class="text-white bg-[#183D5C] hover:bg-sky-700 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            <i class="bi bi-pencil-square"></i> Add teacher
+            <i class="bi bi-pencil-square"></i> Add Student
           </button>
         </div>
         
@@ -211,7 +219,7 @@
           <div class="modal-content">
             <div class="modal-header justify-content-center">
               <i class="bi bi-check-circle-fill text-green-700"></i>
-              <h1 class="modal-title fs-5 text-center ml-5" id="exampleModalLabel">Teacher added successfully!!</h1>
+              <h1 class="modal-title fs-5 text-center ml-5" id="exampleModalLabel">Student added successfully!!</h1>
               
             </div>
             <div class="modal-footer justify-content-center">
