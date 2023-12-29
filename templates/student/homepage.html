@@ -26,113 +26,26 @@
 
       <div class="my-4 bg-gray-500 h-[1px]"></div>
 
-      <div
-        class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-sky-900 text-gray-100">
-        <i class="bi bi-bar-chart-fill"></i>
-        <span class="text-[15px] ml-4 text-gray-100 font-bold">Dashboard</span>
+      <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-sky-900 text-gray-100">
+        <i class="bi bi-house-door"></i>
+        <span class="text-[15px] ml-4 text-gray-100 font-bold">Homepage</span>
+      </div>
+
+      <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-sky-900 text-gray-100">
+        <i class="bi bi-person-fill"></i>
+        <span class="text-[15px] ml-4 text-gray-100 font-bold">My Profile</span>
+      </div>
+
+      <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-sky-900 text-gray-100">
+        <i class="bi bi-calendar-date"></i>
+        <span class="text-[15px] ml-4 text-gray-100 font-bold">Calendar</span>
+      </div>
+
+      <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-sky-900 text-gray-100">
+        <i class="bi bi-box-arrow-right"></i>
+        <span class="text-[15px] ml-4 text-gray-100 font-bold">log out</span>
       </div>
       
-      <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-sky-900 text-gray-100" onclick="dropdown('teacher')">
-        <i class="bi bi-laptop"></i>
-        <div class="flex justify-between w-full items-center">
-          <span class="text-[15px] ml-4 text-gray-100 font-bold">Teacher</span>
-          <span class="text-sm rotate-180" id="arrow-teacher">
-            <i class="bi bi-chevron-down"></i>
-          </span>
-        </div>
-      </div>
-      <div
-        class="text-left text-sm mt-2 w-4/5 mx-auto text-gray-100 font-bold"
-        id="submenu-teacher">
-        <h1 id="all-teachers" class="cursor-pointer p-2 hover:bg-sky-900 rounded-md mt-1">
-          <i class="bi bi-caret-right-fill"></i>
-          All teachers
-        </h1>
-        <h1 id="add-teacher" class="cursor-pointer p-2 hover:bg-sky-900 rounded-md mt-1">
-          <i class="bi bi-caret-right-fill"></i>
-          Add teacher
-        </h1>
-        <h1 id="teacher-details" class="cursor-pointer p-2 hover:bg-sky-900 rounded-md mt-1">
-          <i class="bi bi-caret-right-fill"></i>
-          Teacher details
-        </h1>
-      </div>
-      <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-sky-900 text-gray-100" onclick="dropdown('student')">
-        <i class="bi bi-mortarboard-fill"></i>
-        <div class="flex justify-between w-full items-center">
-          <span class="text-[15px] ml-4 text-gray-100 font-bold">Students</span>
-          <span class="text-sm rotate-180" id="arrow-student">
-            <i class="bi bi-chevron-down"></i>
-          </span>
-        </div>
-      </div>
-      <div
-        class="text-left text-sm mt-2 w-4/5 mx-auto text-gray-100 font-bold"
-        id="submenu-student">
-        <h1 class="cursor-pointer p-2 hover:bg-sky-900 rounded-md mt-1">
-          <i class="bi bi-caret-right-fill"></i>
-          All students
-        </h1>
-        <h1 class="cursor-pointer p-2 hover:bg-sky-900 rounded-md mt-1">
-          <i class="bi bi-caret-right-fill"></i>
-          Add student
-        </h1>
-      </div>
-      <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-sky-900 text-gray-100" onclick="dropdown('class')">
-        <i class="bi bi-calendar2-date"></i>
-        <div class="flex justify-between w-full items-center">
-          <span class="text-[15px] ml-4 text-gray-100 font-bold">Classes</span>
-          <span class="text-sm rotate-180" id="arrow-class">
-            <i class="bi bi-chevron-down"></i>
-          </span>
-        </div>
-      </div>
-      <div
-        class="text-left text-sm mt-2 w-4/5 mx-auto text-gray-100 font-bold"
-        id="submenu-class">
-        <h1 class="cursor-pointer p-2 hover:bg-sky-900 rounded-md mt-1">
-          <i class="bi bi-caret-right-fill"></i>
-          Class list
-        </h1>
-        <h1 class="cursor-pointer p-2 hover:bg-sky-900 rounded-md mt-1">
-          <i class="bi bi-caret-right-fill"></i>
-          Add class
-        </h1>
-        <h1 class="cursor-pointer p-2 hover:bg-sky-900 rounded-md mt-1">
-            <i class="bi bi-caret-right-fill"></i>
-            Manage Class
-        </h1>
-      </div>
-      <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-sky-900 text-gray-100" onclick="dropdown('course')">
-        <i class="bi bi-easel2-fill"></i>
-        <div class="flex justify-between w-full items-center">
-          <span class="text-[15px] ml-4 text-gray-100 font-bold">Courses</span>
-          <span class="text-sm rotate-180" id="arrow-course">
-            <i class="bi bi-chevron-down"></i>
-          </span>
-        </div>
-      </div>
-      <div
-        class="text-left text-sm mt-2 w-4/5 mx-auto text-gray-100 font-bold"
-        id="submenu-course">
-        <h1 class="cursor-pointer p-2 hover:bg-sky-900 rounded-md mt-1">
-          <i class="bi bi-caret-right-fill"></i>
-          Courses list
-        </h1>
-        <h1 class="cursor-pointer p-2 hover:bg-sky-900 rounded-md mt-1">
-          <i class="bi bi-caret-right-fill"></i>
-          Add course
-        </h1>
-        <h1 class="cursor-pointer p-2 hover:bg-sky-900 rounded-md mt-1">
-            <i class="bi bi-caret-right-fill"></i>
-            Assign Course
-        </h1>
-      </div>
-      <div
-        class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-sky-900 text-gray-100">
-        <i class="bi bi-box-arrow-in-right"></i>
-        <span class="text-[15px] ml-4 text-gray-100 font-bold">Logout</span>
-      </div>
     </div>
         <!-- Main Content -->
     <div class="main-content ml-[300px] p-8">
@@ -176,6 +89,5 @@
       document.getElementById("teacher-details").addEventListener("click", navigateToDetailTeacher);
 
     </script>
-
   </body>
 </html>
